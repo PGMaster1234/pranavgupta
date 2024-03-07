@@ -20,6 +20,300 @@
         </div>
     </nav>
 
+    <div class="project-hero">
+        <div class="project-header">Machine Learning & Algorithms</div>
+        <p class="project-header-dates">March 2023 - Present</p>
+        <p>Since March, 2023, I've developed many algorithms involving Searches, Clustering, Cellular Autamata, and
+            Tilemaps. Since the Summer of 2023 when I attended UTD's 8-week AI course and learned about many machine
+            learning principles, I've built machine learning projects using Computer Vision, Genetics-based
+            Evolution, and Reinforcement Learning.</p>
+    </div>
+
+    <div class="project-cards-container">
+        <div class="project-card" id="EvolutionDroneControl">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Evolution-based Drone control</div>
+                    <div class="project-card-stats"></div>
+                    <div class="project-card-stats">200+ hours</div>
+                    <div class="project-card-stats">1100+ lines</div>
+                </div>
+                <div class="project-card-desc">
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="FloodfillAlgorithm">
+            <div class="project-card-text-container">
+                <video autoplay loop muted plays-inline class="project-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/FloodFillBackground.mp4" type="video/mp4">
+                </video>
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Floodfill Algorithm</div>
+                    <div class="project-card-stats">October 2023</div>
+                    <div class="project-card-stats">3-5 hours</div>
+                    <div class="project-card-stats">196 lines</div>
+                </div>
+                <div class="project-card-desc">A simple floodfill algorithm I made in a few hours because I was bored.
+                    It’s not heavily optimized but it still runs
+                    quite quickly and can fill a ~8000 tile section in a few seconds. (A lot of lag towards the end of
+                    the fill demo is
+                    purely because of computation lag from the visuals. I’m manually drawing the thousands of filled
+                    tiles each frame which
+                    slows down the program a lot).
+
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="BadmintonDrone">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Badminton Drone</div>
+                    <div class="project-card-stats">July 2023</div>
+                    <div class="project-card-stats">40-50 hours</div>
+                    <div class="project-card-stats">188 lines</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. For my final
+                    project at the UTD course, I attempted to
+                    create a drone that could follow badminton shuttles, catch them, and retrieve them back to the user.
+                    This would require
+                    many steps, the first of which being detecting the shuttle. I started with collecting data by
+                    manually annotating 700
+                    images of shuttles that I collected by sampling videos I recorded on my phone. I then used the
+                    Roboflow augmentation
+                    software to apply random rotations, recoloring, and noise to the images and was left with ~16,000
+                    images. I then created
+                    a CNN model (Convolutional Neural Network) that could detect badminton shuttles within an image by
+                    using transfer
+                    learning to convert the YoloV8 object detection model to detect badminton shuttles in my image data.
+                    The next step was
+                    implementing a controller that would use the position data of the shuttle from the CNN model to move
+                    the drone. I
+                    couldn’t directly enter lateral positions because the only parameter of the drone I could control
+                    was its acceleration
+                    by tilting the drone. The solution was a tuned PID controller. Using a custom bi-directional PID
+                    controller (shown in
+                    the background photo), I could move the drone towards the shuttle without major oscillations. The
+                    final step was
+                    returning the drone back to the user. To do this, I simply recorded positon movements of the drone
+                    as it followed the
+                    shuttle and calculated a return path to reach the starting position. While I wasn’t able to finish
+                    the physical drone in
+                    time for the presentation, the model and software required to create the drone were completed in
+                    time. Learn more about
+                    the project by looking at my final presentation here! <span
+                        url="https://docs.google.com/presentation/d/1MOJSS3PfC7bMNxgdIyWJuBigRIZ7Al77fn_WzoaC6oM/edit?usp=sharing ">Slides
+                        Presentation</span>The video shows the PID controller helping the
+                    drone (in white)
+                    follow the shuttle (in red). The frame rate is slowed down to 20fps so the tuning is visible.
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="FirstCNN">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">First CNN</div>
+                    <div class="project-card-stats">July 2023</div>
+                    <div class="project-card-stats">5 hours (mostly lecture, coding took about half an hour)</div>
+                    <div class="project-card-stats">141 lines</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. During a
+                    lecture by the CS lead at UTD, Dr. Jey Veerasamy,
+                    we went through a PyTorch CNN (Convolutional Neural Network) demo that could classify low-resolution
+                    images of objects.
+                    Using the Cifar dataset with 60,000 data points, we used a PyTorch CNN model to reach a 96% accuracy
+                    in classifying the
+                    objects.
+
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="FirstRLThing">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">First Reinforcement Learning Attempt</div>
+                    <div class="project-card-stats">July 2023 - December 2023
+                    </div>
+                    <div class="project-card-stats">20-30 hours</div>
+                    <div class="project-card-stats">301 lines</div>
+                </div>
+                <div class="project-card-desc">This took about four attempts and a dozen files to complete. I was
+                    learning how to code discrete reinforcement learning
+                    using my own implementation of a neural network in a tile-based environment. The agent has to learn
+                    to reach the goal in
+                    a minimum number of steps while avoiding running into obstacles. Completing this project taught me
+                    about the Monte Carlo
+                    method, the SARSA algorithm(State_knot, Action, Reward, State_next, Action_next), and q-learning. I
+                    would eventually get
+                    selected as an (informal) TA during the last few weeks of the course to teach other students about
+                    reinforcement
+                    learning and specifically q-learning. Eventually, I’d also dive into actor-critic models using my
+                    knowledge of discrete
+                    environments.
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="ClusteringAlgorithm
+">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Clustering Algorithm
+                    </div>
+                    <div class="project-card-stats">July 2023</div>
+                    <div class="project-card-stats">12 minutes. Yes I timed myself</div>
+                    <div class="project-card-stats">196 lines</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. This was a
+                    basic implementation of the k-means clustering
+                    algorithm with Pygame as a nice interactive visual interface rather than using MatPlotLib and only
+                    seeing the final
+                    result. The demo video is me manually stepping through iterations. In reality, it can handle 5000
+                    points with 20 k-means
+                    in about a half-second (this also includes rendering the Pygame interface, so purely running the
+                    functions would be even
+                    faster).
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="Driving2DCarAI">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">2D Self Driving with Boids Algorithm</div>
+                    <div class="project-card-stats">June 2023 - September 2023</div>
+                    <div class="project-card-stats">10-20 hours</div>
+                    <div class="project-card-stats">302 lines</div>
+                </div>
+                <div class="project-card-desc">Using my implementation of the Boids algorithm to drive a car in a 2D
+                    tilemap environment. While I’d already made a
+                    basic boids algorithm in the past, this optimized a lot of that original algorithm, in the end being
+                    about 10-15 times
+                    faster. This new version could also attract and repel towards/away from arbitrary points in
+                    real-time.
+
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="8Puzzle">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">8 Puzzle</div>
+                    <div class="project-card-stats">June 2023</div>
+                    <div class="project-card-stats">2-3 hours</div>
+                    <div class="project-card-stats">116 lines</div>
+                </div>
+                <div class="project-card-desc">The 8Puzzle is a classic board shuffling puzzle where you start with a
+                    (mostly, because some starting positions are
+                    impossible to solve) random board and have to slide pieces around to reach a specific final board
+                    state. I successfully
+                    implemented the A* algorithm to solve this problem.
+
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="ImportingIrisDataSet">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Using the Iris Data Set</div>
+                    <div class="project-card-stats">June 2023</div>
+                    <div class="project-card-stats">2-3 hours</div>
+                    <div class="project-card-stats">67 lines</div>
+                </div>
+                <div class="project-card-desc">This was a short project where we got to use the Iris dataset of ~150
+                    data points collected from different Iris plants.
+                    The goal was to see how quickly we could find dependent variables from the 6 input variables we were
+                    given in the
+                    dataset. Using NumPy’s polynomial regression and testing fit coefficients for each pair, I was able
+                    to find two pairs of
+                    independent and dependent variables.
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="MovieSentiment">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Movie Sentiment</div>
+                    <div class="project-card-stats">June 2023 - July 2023</div>
+                    <div class="project-card-stats">5-10 hours</div>
+                    <div class="project-card-stats">~600 lines total across 4 attempts</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. The problem
+                    was building a sentiment analysis LSTM model
+                    that could process text inputs (movie reviews) and say if they were positive or negative reviews. It
+                    used the IMDB
+                    dataset which has 50,00 data points, and it used a model that had ~70,000 parameters. I first
+                    attempted to solve this
+                    using my own from-scratch LSTM model but wasn’t successful. Afterwards, I tried using Tensorflow but
+                    couldn’t
+                    successfully implement it either. Finally, I decided to use PyTorch and got it to work. While
+                    limited by my computer’s
+                    processing power during training, after the 15 epochs I was able to run (which took about half an
+                    hour) the model
+                    reached ~86% accuracy. This model had overfitting issues, though, because the training accuracy was
+                    reaching over 98%.
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="MushroomDataset">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Mushroom Dataset</div>
+                    <div class="project-card-stats">June 2023</div>
+                    <div class="project-card-stats">2-3 hours</div>
+                    <div class="project-card-stats">235 lines</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. This used a
+                    tree data structure to sort a dataset of ~8000
+                    mushrooms based on specific attributes and the Naive Bayes algorithm. After implementing that,
+                    though, I wanted to
+                    create a visual so I could better understand the algorithm and the final product it produced, so I
+                    coded this! (the
+                    spacing is a little wack so some nodes aren’t the most legible)
+
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="Multi-inputPolynomialRegression
+">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Multi-input Polynomial Regression
+                    </div>
+                    <div class="project-card-stats">June 2023 - July 2023</div>
+                    <div class="project-card-stats">2-3 hours (only around 30min to implement, rest was learning the
+                        math)</div>
+                    <div class="project-card-stats">293 lines</div>
+                </div>
+                <div class="project-card-desc">I coded this at the 8-week UTD AI Summer Course I attended. This was
+                    around a week before we would learn neural
+                    networks, so this model was only made with four weight parameters. The bulk of this project was just
+                    understanding the
+                    process of calculating loss, conducting backpropagation through calculating derivatives of each
+                    weight, and finally
+                    testing this new method on a few datasets. In the video, the red dots are predictions from the
+                    trained model and the
+                    blue dots are the true values (they are extremely close so it looks like it's glitching sometimes).
+                </div>
+            </div>
+        </div>
+        <div class="project-card" id="Bomberman">
+            <div class="project-card-text-container">
+                <div class="project-card-main-text-container">
+                    <div class="project-card-title">Bomberman</div>
+                    <div class="project-card-stats">March 2023 - April 2023</div>
+                    <div class="project-card-stats">10-20 hours</div>
+                    <div class="project-card-stats">376 lines</div>
+                </div>
+                <div class="project-card-desc">Original idea based on the two-player game “Bomberman” by Nintendo. The
+                    bulk of the project was developing a custom map
+                    generator. It was partly based on Sebastian Lague’s “Cave Generation” series and the theory of
+                    Cellular Automata. The
+                    game never got far though because this was during AP testing season and later I got more interested
+                    in other projects.
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <hr class="footer">
     <footer>
         <div class="footer-about">
