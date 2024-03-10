@@ -446,6 +446,38 @@ footer {
     border-radius: 15px;
 }
 
+#boss-fight {
+    grid-template-columns: 2fr 5fr;
+}
+
+#jet-fighter3 {
+    grid-template-columns: 5fr 2fr;
+}
+
+#table-tanks {
+    grid-template-columns: 1fr 2fr;
+}
+
+#tic-tac-toe {
+    grid-template-columns: 5fr 2fr;
+}
+
 #csp-platformer {
-    background-image: url('VideoGamesImages/CspBackground.png');
+    grid-template-columns: 2fr 5fr;
+}
+
+#jet-fighter2 {
+    grid-template-columns: 5fr 2fr;
+}
+
+#CantTouchTheSquare {
+    grid-template-columns: 2fr 5fr;
+}
+
+#jet-fighter1 {
+    grid-template-columns: 5fr 2fr;
+}
+
+#pong {
+    grid-template-columns: 2fr 5fr;
 }
