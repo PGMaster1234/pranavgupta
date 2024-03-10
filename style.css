@@ -502,3 +502,23 @@ footer {
 #ParticleBackground {
     grid-template-columns: 4fr 1fr;
 }
+
+#FRAMEWORK {
+    grid-template-columns: 2fr 3fr;
+}
+
+#BeaverworksCodingAssignments {
+    grid-template-columns: 4fr 1fr;
+}
+
+#MapEditor {
+    grid-template-columns: 2fr 3fr;
+}
+
+#ClothSimulation {
+    grid-template-columns: 3fr 2fr;
+}
+
+#PhysicsSignProposal {
+    grid-template-columns: 2fr 3fr;
+}
