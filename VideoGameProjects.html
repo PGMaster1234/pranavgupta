@@ -28,49 +28,60 @@
             created using Python, and they used Pygame as their interface.</p>
     </div>
     <div class="project-cards-container">
-        <div class="project-card" id="boss-fight">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="boss-fight">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Boss Fight</div>
                     <div class="project-card-stats">January 2024 - Present</div>
                     <div class="project-card-stats">10-20 hours</div>
                     <div class="project-card-stats">900+ lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">My most recent game, but very much a work in progress so far. I used my
                     boid algorithm for boss movement around walls. I
-                    also created an ellipse collision function for a “Casket Toss” attack by the ranged boss. Melee boss
-                    coming soon!
+                    also created an ellipse collision function for a “Casket Toss” attack by the ranged boss. Finally, I
+                    used a Calculus BC principle called a "Geometric Series" to calculate the initial speed the casket
+                    should be thrown at and how quickly this speed should decay. This ensures the casket lands at the
+                    player's position every time while following a believable, decaying parabolic path to get there.
+                    Melee boss and better graphics coming soon!
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/BossFightBackground.mov" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <div class="project-card" id="jet-fighter3">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="jet-fighter3">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/JetFighter3Background.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Jet Fighter 3</div>
                     <div class="project-card-stats">April 2023</div>
                     <div class="project-card-stats">80+ hours</div>
                     <div class="project-card-stats">750+, 175 lines of planning</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">Developed a custom node system to build an upgrade tree. Nodes have
-                    parents and
-                    children and can access their
-                    corresponding attributes to check the player’s economy and what upgrades have been unlocked. The
-                    actual
-                    game, which I
-                    finally got to this time, included a custom camera system (only 10 lines but a lot of very confusing
-                    math)
-                    that
+                    parents and children and can access their corresponding attributes to check the player's economy and
+                    what upgrades have been unlocked. The actual game, which I finally got to this time, included a
+                    custom camera system (only 10 lines but a lot of very confusing math) that
                 </div>
             </div>
         </div>
-        <div class="project-card" id="table-tanks">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="table-tanks">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Table Tanks</div>
                     <div class="project-card-stats">January 2023</div>
                     <div class="project-card-stats">3-5 hours</div>
                     <div class="project-card-stats">401 lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">I saw one of my friends playing the original game of the same name, Table
                     Tanks, and thought “hey, I could make that.” A
                     few hours later I had a simple 2D tile-based game with a sentry that could automatically target the
@@ -80,52 +91,72 @@
                     cohesive and (mostly) bugless it in only a few hours.
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/TableTanksBackground.mov" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <div class="project-card" id="tic-tac-toe">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="tic-tac-toe">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/TicTacToe2Background.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Tic Tac Toe</div>
                     <div class="project-card-stats">June 2023</div>
                     <div class="project-card-stats">20+ hours</div>
                     <div class="project-card-stats">900+ lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">Using a very buggy hand detection model on OpenCV to play TicTacToe.
-                    Originally
-                    this was a project to build a BFS/DFS
-                    based Tic-Tac-Toe bot for the 8-week AI course I was attending at UTD. After quickly finishing that
-                    and
-                    having copious
-                    amounts of time left, I thought why not make the controller cooler. A few hours of debugging later I
-                    was
-                    left with an
-                    OpenCV model that could detect my hand using my laptop’s camera to let me play TicTacToe against a
-                    custom
-                    BFS bot!</div>
+                    Originally this was a project to build a BFS/DFS based Tic-Tac-Toe bot for the 8-week AI course I
+                    was attending at UTD. After quickly finishing that and having copious amounts of time left, I
+                    thought why not make the controller cooler. A few hours of debugging later I was left with an OpenCV
+                    model that could detect my hand using my laptop's camera to let me play TicTacToe against a custom
+                    BFS bot! Using OpenCV's hand detection model, I created a mouse pointer that is located between the
+                    user's index finger and thumb. To click, the user has to pinch their fingers in a similar way to
+                    Apple's recent "Apple Vision Pro" product.</div>
             </div>
         </div>
-        <div class="project-card" id="csp-platformer">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="csp-platformer">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">CSP Platformer</div>
                     <div class="project-card-stats">January 2023</div>
                     <div class="project-card-stats">20-30 hours spent</div>
                     <div class="project-card-stats">867 lines of code</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">In my Sophomore year I took the AP Computer Science Principles (CSP)
                     course. For the final project that we would submit to College Board, most people decided to do
                     somethign simple using Code.org, a website we used throughout the year for smaller projects. I,
                     being as ambitious as ever, decided to submit a platformer using Python. All of the assets in this
-                    game are drawn by me! Yes, the map counter too, it took forever. </div>
+                    game are drawn by me! I really love how the health bar turned out. And yes, the map counter was
+                    drawn too, it took forever. </div>
+            </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/CSPBackground.mov" type="video/mp4">
+                </video>
             </div>
         </div>
-        <div class="project-card" id="jet-fighter2">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="jet-fighter2">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/JetFighter2Background.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Jet Fighter 2</div>
                     <div class="project-card-stats">December 2021</div>
                     <div class="project-card-stats">40+ hours</div>
                     <div class="project-card-stats">891 lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">Attempt 2. Much better UI with fluid animations and even a transition.
                     Still lots of hard coding but much cleaner code
                     overall, at least compared to Jet Fighter 1. Crazy what only a few months of practice could teach
@@ -133,51 +164,66 @@
                 </div>
             </div>
         </div>
-        <div class="project-card" id="CantTouchTheSquare">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="CantTouchTheSquare">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Can't Touch The Square</div>
                     <div class="project-card-stats">September 2021</div>
                     <div class="project-card-stats">3-5 hours</div>
                     <div class="project-card-stats">349 lines</div>
                 </div>
-                <div class="project-card-desc">Don’t run out of lives! This was quite a simple game I made over a few
+                <div class="project-half-card-description-spacer"></div>
+                <div class="project-card-desc">Don't run out of lives! This was quite a simple game I made over a few
                     days during school hours (honors Chem gets quite
                     boring). Still lots of hard coding and spaghetti code though.
-
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/CantTouchTheSquareBackground.mov" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <div class="project-card" id="jet-fighter1">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="jet-fighter1">
+            <div class="project-half-card-image-container">
+                <img src="VideoGamesImages/JetFighter1Background.png" width="95%" id="JetFighter1">
+            </div>
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Jet Fighter 1</div>
                     <div class="project-card-stats">August 2021</div>
                     <div class="project-card-stats">15-20 hours</div>
                     <div class="project-card-stats">547 lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">My first attempt at building a large game. I mostly worked on UI and
                     planning out the game. Developed a basic upgrade
-                    tree but never actually coded the nodes. (Looking back at this—wow there’s a lot of hard coding.
-                    I’ve come a long way).
+                    tree but never actually coded the nodes. (Looking back at this—wow there's a lot of hard coding.
+                    I've come a long way).
                 </div>
             </div>
         </div>
-        <div class="project-card" id="Pong">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="pong">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Pong</div>
                     <div class="project-card-stats">July 2021 - August 2021</div>
                     <div class="project-card-stats">5-10 hours</div>
                     <div class="project-card-stats">270 lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">My first game in Python using the PyGame library! While extremely simple,
                     this taught me a lot about the Pygame library,
                     basic rect collisions, and how to develop a game loop. I also experimented with a simple particle
                     system that would
-                    spawn ~50 particles after a collision (these were purely visual and couldn’t themselves collide with
+                    spawn ~50 particles after a collision (these were purely visual and couldn't themselves collide with
                     anything).
                 </div>
+            </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="VideoGamesImages/PongBackground.mov" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
