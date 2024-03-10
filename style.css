@@ -481,3 +481,24 @@ footer {
 #pong {
     grid-template-columns: 2fr 5fr;
 }
+
+#TriangleBackground {
+    grid-template-columns: 2fr 5fr;
+}
+
+#FPSGame {
+    grid-template-columns: 5fr 2fr;
+}
+
+#BattleGrounds {
+    grid-template-columns: 2fr 5fr;
+}
+
+#BattleGrounds-link {
+    color: var(--fancy-text);
+    text-decoration: underline;
+}
+
+#ParticleBackground {
+    grid-template-columns: 4fr 1fr;
+}
