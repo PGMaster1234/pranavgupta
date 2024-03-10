@@ -16,7 +16,7 @@
     background-color: var(--primary-background);
     color: var(--primary-text);
     border: none;
-    cursor: none;
+    /* cursor: none; */
     user-select: none;
 }
 
@@ -202,7 +202,7 @@ footer {
 .project-hero {
     padding: 5vh 20vw;
     display: grid;
-    min-height: 40vh;
+    min-height: 42vh;
     text-align: center;
 }
 
@@ -210,6 +210,7 @@ footer {
     font-size: 6rem;
     font-weight: bold;
     text-shadow: 4px 6px 0 var(--fancy-text);
+    padding-bottom: 1rem;
 }
 
 .project-header-dates {
@@ -222,10 +223,10 @@ footer {
     grid-gap: 30px;
 }
 
-.project-card {
+.project-card{
     position: relative;
     width: 96vw;
-    height: 80vh;
+    min-height: 80vh;
     margin: 0 2vw;
     padding: 10px;
     border-width: 2px;
@@ -236,25 +237,84 @@ footer {
     background-size: cover;
 }
 
+.project-half-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    width: 96vw;
+    min-height: 80vh;
+    margin: 0 2vw;
+    padding: 10px;
+}
+
+.project-half-card-image-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--fancy-text);
+    box-shadow: 3px 3px 5px 5px var(--tertiary-background);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .project-card:hover {
     width: 97vw;
-    height: 81vh;
+    height: 82vh;
     margin: 0 1.5vw;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
+    top: -1%;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out, margin 0.2s ease-in-out;
 }
 
 .project-card:not(:hover) {
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
+    top: 0%;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, top 0.2s ease-in-out, margin 0.2s ease-in-out;
+}
+
+.project-half-card-image-container:hover {
+    width: 102%;
+    height: 102%;
+    left: -1%;
+    top: -1%;
+    transition: width 0.2s ease-in-out, top 0.2s ease-in-out, left 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.project-half-card-image-container:not(:hover) {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    transition: width 0.2s ease-in-out, top 0.2s ease-in-out, left 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
 .project-card-background-video {
     position: absolute;
+    filter: brightness(50%);
     max-width: 100%;
     max-height: 100%;
-    top: 0;
-    right: 0px;
+    top: 0;;
     z-index: 0;
-    background-size: contain;
+    background-size: cover;
+}
+
+.project-half-card-background-video {
+    position: relative;
+    z-index: 0;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 15px;
+}
+
+.project-half-card-video-caption {
+    position: relative;
+    padding-top: 1rem;
+    font-size: 1rem;
 }
 
 .project-card-text-container {
@@ -266,6 +326,21 @@ footer {
     height: 100%;
     width: 60%;
     z-index: 1;
+}
+
+.project-half-card-text-container {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.project-half-card-description-spacer {
+    position: relative;
+    width: 100%;
+    padding-top: 4rem;
 }
 
 .project-card-main-text-container {
@@ -291,6 +366,84 @@ footer {
     z-index: inherit;
     font-size: 1rem;
     background-color: inherit;
+}
+
+#FloodfillAlgorithm {
+    grid-template-columns: 1fr 2fr;
+}
+
+#BadmintonDrone {
+    grid-template-columns: 3fr 4fr;
+}
+
+#badminton-drone-slides-link {
+    color: var(--fancy-text);
+    text-decoration: underline;
+}
+
+#FirstCNN {
+    border-radius: 15px;
+}
+
+#ClusteringAlgorithm {
+    grid-template-columns: 3fr 5fr;
+}
+
+#Driving2DCarAI {
+    grid-template-columns: 3fr 2fr;
+}
+
+#EightPuzzle {
+    grid-template-columns: 1fr 2fr;
+}
+
+#EightPuzzleImage {
+    border-radius: 15px;
+}
+
+#ImportingIrisDataSet {
+    grid-template-columns: 3fr 2fr;
+}
+
+#ImportingIrisDataSetImage {
+    filter: brightness(90%);
+    border-radius: 15px;
+}
+
+#MovieSentiment {
+    grid-template-columns: 5fr 3fr;
+}
+
+#MovieSentimentImage {
+    filter: brightness(90%);
+    border-radius: 15px;
+}
+
+#MushroomDataset {
+    grid-template-columns: 7fr 3fr;
+}
+
+#MushroomDatasetImage {
+    filter: brightness(90%);
+    border-radius: 15px;
+}
+
+#MultiInputPolynomialRegression {
+    grid-template-columns: 3fr 5fr;
+}
+
+#MultiInputPolynomialRegressionImage {
+    filter: brightness(90%);
+    border-radius: 15px;
+}
+
+#Bomberman {
+    grid-template-columns: 2fr 1fr;
+}
+
+#BombermanImage {
+    filter: brightness(90%);
+    border-radius: 15px;
 }
 
 #csp-platformer {
