@@ -39,10 +39,25 @@ hr.hero-header {
     border: 0.5px solid white;
 }
 
+hr.projects-header {
+    width: 35%;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    border: 0.5px solid white;
+}
+
 hr.footer {
     margin: 5vh 0 0 3vw;
     width: 94vw;
     border: 0.5px solid white;
+}
+
+.vl {
+    position: absolute;
+    border-left: 1px solid white;
+    height: 10vh;
+    left: 50vw;
+    top: 130vh;
 }
 
 nav {
@@ -119,7 +134,7 @@ footer {
     background: transparent;
     z-index: 1;
     display: grid;
-    height: 120vh;
+    height: 150vh;
 }
 
 .hero-header-container {
@@ -151,13 +166,28 @@ footer {
     color: var(--secondary-text);
 }
 
+.projects-header-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-header {
+    font-weight: bold;
+    font-size: 5rem;
+    text-shadow: 3px 5px 0 var(--fancy-text);
+}
+
 .portrait {
     filter: brightness(90%);
     filter: contrast(110%);
     position: absolute;
     height: 100vh;
     width: auto;
-    top: -60%;
+    top: -30vh;
     left: 65%;
     z-index: 0;
     border-radius: 15px;
