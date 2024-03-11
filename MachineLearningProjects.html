@@ -30,19 +30,36 @@
     </div>
 
     <div class="project-cards-container">
-        <div class="project-card" id="EvolutionDroneControl">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="EvolutionDroneControl">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Evolution-based Drone control</div>
                     <div class="project-card-stats"></div>
                     <div class="project-card-stats">200+ hours</div>
                     <div class="project-card-stats">1100+ lines</div>
                 </div>
-                <div class="project-card-desc">
+                <div class="project-half-card-description-spacer"></div>
+                <div class="project-card-desc">This was one of my biggest projects to date, involving a custom
+                    Evolution-based AI model that trained neural networks using mutations and crossover. The goal of the
+                    project was to train a 2D drone to fly using a neural network that could contorl the angle and the
+                    thrust force of those thrusters. Over the course of a few months and hundreds of versions I ironed
+                    out bugs in the training sequence, tuned training parameters, and built stronger and stronger
+                    networks to control the drone.
                 </div>
+            </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/DroneEvolutionBackground.mp4"
+                        type="video/mp4">
+                </video>
             </div>
         </div>
         <div class="project-half-card" id="FloodfillAlgorithm">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/FloodFillBackground.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Floodfill Algorithm</div>
@@ -58,19 +75,8 @@
                     program a lot).
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <video autoplay loop muted plays-inline class="project-half-card-background-video">
-                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/FloodFillBackground.mp4" type="video/mp4">
-                </video>
-            </div>
         </div>
         <div class="project-half-card" id="BadmintonDrone">
-            <div class="project-half-card-image-container">
-                <video autoplay loop muted plays-inline class="project-half-card-background-video">
-                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/BadmintonDroneBackground.mp4"
-                        type="video/mp4">
-                </video>
-            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Badminton Drone</div>
@@ -106,8 +112,17 @@
                     shuttle (in red). The frame rate is slowed down to 20fps so the tuning is visible.
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/BadmintonDroneBackground.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
         </div>
         <div class="project-half-card">
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/FirstCNNBackground.png" width="95%" id="FirstCNN">
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">First CNN</div>
@@ -124,12 +139,9 @@
                     in classifying the images after only ~15 minutes of training time.
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/FirstCNNBackground.png" width="95%" id="FirstCNN">
-            </div>
         </div>
-        <div class="project-card" id="FirstRLThing">
-            <div class="project-card-text-container">
+        <div class="project-half-card" id="FirstRLThing">
+            <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">First Reinforcement Learning Attempt</div>
                     <div class="project-card-stats">July 2023 - December 2023
@@ -137,23 +149,31 @@
                     <div class="project-card-stats">20-30 hours</div>
                     <div class="project-card-stats">301 lines</div>
                 </div>
+                <div class="project-half-card-description-spacer"></div>
                 <div class="project-card-desc">This took about four attempts and a dozen files to complete. I was
-                    learning how to code discrete reinforcement learning
-                    using my own implementation of a neural network in a tile-based environment. The agent has to learn
-                    to reach the goal in
-                    a minimum number of steps while avoiding running into obstacles. Completing this project taught me
-                    about the Monte Carlo
+                    learning how to code discrete reinforcement learning using my own implementation of a neural network
+                    in a tile-based environment. The agent has to learn to reach the goal in a minimum number of steps
+                    while avoiding running into obstacles. Completing this project taught me about the Monte Carlo
                     method, the SARSA algorithm(State_knot, Action, Reward, State_next, Action_next), and q-learning. I
-                    would eventually get
-                    selected as an (informal) TA during the last few weeks of the course to teach other students about
-                    reinforcement
-                    learning and specifically q-learning. Eventually, I'd also dive into actor-critic models using my
-                    knowledge of discrete
-                    environments.
+                    would eventually get selected as an (informal) TA during the last few weeks of the course to teach
+                    other students about reinforcement learning and specifically q-learning. Eventually, I'd also dive
+                    into actor-critic models using my knowledge of discrete environments.
                 </div>
+            </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/DiscreteRL.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
         <div class="project-half-card" id="ClusteringAlgorithm">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/ClusteringAlgorithmBackground.mp4"
+                        type="video/mp4">
+                </video>
+                <p class="project-half-card-video-caption">(Heavily slowed down for demo)</p>
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Clustering Algorithm
@@ -172,21 +192,8 @@
                     would be even faster).
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <video autoplay loop muted plays-inline class="project-half-card-background-video">
-                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/ClusteringAlgorithmBackground.mp4"
-                        type="video/mp4">
-                </video>
-                <p class="project-half-card-video-caption">(Heavily slowed down for demo)</p>
-            </div>
         </div>
         <div class="project-half-card" id="Driving2DCarAI">
-            <div class="project-half-card-image-container">
-                <video autoplay loop muted plays-inline class="project-half-card-background-video">
-                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/DrivingCar2DBackground.mp4"
-                        type="video/mp4">
-                </video>
-            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">2D Self Driving with Boids Algorithm</div>
@@ -201,8 +208,17 @@
                     also attract and repel towards/away from arbitrary points in real-time.
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/DrivingCar2DBackground.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
         </div>
         <div class="project-half-card" id="EightPuzzle">
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/8PuzzleBackground.png" width="95%" id="EightPuzzleImage">
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">8 Puzzle</div>
@@ -217,15 +233,8 @@
                     solve this problem.
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/8PuzzleBackground.png" width="95%" id="EightPuzzleImage">
-            </div>
         </div>
         <div class="project-half-card" id="ImportingIrisDataSet">
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/IrisDatasetBackground.png" width="95%"
-                    id="ImportingIrisDataSetImage">
-            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Using the Iris Data Set</div>
@@ -241,8 +250,16 @@
                     independent and dependent variables.
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/IrisDatasetBackground.png" width="95%"
+                    id="ImportingIrisDataSetImage">
+            </div>
         </div>
         <div class="project-half-card" id="MovieSentiment">
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/MovieSentimentBackground.png" width="95%"
+                    id="MovieSentimentImage">
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Movie Sentiment</div>
@@ -263,16 +280,8 @@
                     the training accuracy was reaching nearly 99%.
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/MovieSentimentBackground.png" width="95%"
-                    id="MovieSentimentImage">
-            </div>
         </div>
         <div class="project-half-card" id="MushroomDataset">
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/MushroomDataSetBackground.png" width="95%"
-                    id="MushroomDatasetImage">
-            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Mushroom Dataset</div>
@@ -291,8 +300,18 @@
                     spacing is a little wack so some nodes aren't the most legible)
                 </div>
             </div>
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/MushroomDataSetBackground.png" width="95%"
+                    id="MushroomDatasetImage">
+            </div>
         </div>
         <div class="project-half-card" id="MultiInputPolynomialRegression">
+            <div class="project-half-card-image-container">
+                <video autoplay loop muted plays-inline class="project-half-card-background-video">
+                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/MultiInputPolynomailRegression.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Multi-input Polynomial Regression
@@ -315,17 +334,8 @@
                     blue dots are the true values (they are extremely close so it looks like it's glitching sometimes).
                 </div>
             </div>
-            <div class="project-half-card-image-container">
-                <video autoplay loop muted plays-inline class="project-half-card-background-video">
-                    <source src="MachineLearningAndAlgorithmsImages/MP4Files/MultiInputPolynomailRegression.mp4"
-                        type="video/mp4">
-                </video>
-            </div>
         </div>
         <div class="project-half-card" id="Bomberman">
-            <div class="project-half-card-image-container">
-                <img src="MachineLearningAndAlgorithmsImages/BombermanBackground.png" width="95%" id="BombermanImage">
-            </div>
             <div class="project-half-card-text-container">
                 <div class="project-card-main-text-container">
                     <div class="project-card-title">Bomberman</div>
@@ -341,6 +351,9 @@
                     game never got far though because this was during AP testing season and later I got more interested
                     in other projects.
                 </div>
+            </div>
+            <div class="project-half-card-image-container">
+                <img src="MachineLearningAndAlgorithmsImages/BombermanBackground.png" width="95%" id="BombermanImage">
             </div>
         </div>
     </div>
