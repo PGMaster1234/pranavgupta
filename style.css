@@ -152,10 +152,12 @@ footer {
 }
 
 .card {
+    position: relative;
+    background-size: contain;
     width: 98%;
     height: 98%;
     margin: 1%;
-    padding: 5% 5%;
+    padding: 1% 1%;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
@@ -177,16 +179,23 @@ footer {
 }
 
 .card-text-container {
+    background: transparent;
     width: 100%;
     height: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-header {
-    text-shadow: 2px 3px 0 var(--text-shadow);
+    background: inherit;
+    text-shadow: 2px 3px 0 var(--fancy-text);
     font-size: 2rem;
 }
 
 .card-desc {
+    background: inherit;
     font-size: 1rem;
 }
 
@@ -195,8 +204,46 @@ footer {
     height: 20%;
     text-decoration: none;
     padding: 1rem;
-    border: 1px solid var(--primary-text);
+    border: 1px solid var(--fancy-text);
     border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card-background-video {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.card-vfx-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+#MachineLearning-card {
+    background-color: rgb(137, 132, 181);
+}
+
+#VideoGames-card {
+    background-color: rgb(12, 14, 18);
+}
+
+#VFX-card {
+    background-color: rgb(30, 29, 39);
+}
+
+#Simulations-card {
+    background-color: rgb(69, 74, 123);
 }
 
 .project-hero {
@@ -368,12 +415,16 @@ footer {
     background-color: inherit;
 }
 
-#FloodfillAlgorithm {
+#EvolutionDroneControl {
     grid-template-columns: 1fr 2fr;
 }
 
+#FloodfillAlgorithm {
+    grid-template-columns: 2fr 1fr;
+}
+
 #BadmintonDrone {
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 4fr 3fr;
 }
 
 #badminton-drone-slides-link {
@@ -385,16 +436,20 @@ footer {
     border-radius: 15px;
 }
 
-#ClusteringAlgorithm {
+#FirstRLThing {
     grid-template-columns: 3fr 5fr;
 }
 
+#ClusteringAlgorithm {
+    grid-template-columns: 5fr 3fr;
+}
+
 #Driving2DCarAI {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 #EightPuzzle {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 #EightPuzzleImage {
@@ -402,7 +457,7 @@ footer {
 }
 
 #ImportingIrisDataSet {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 3fr;
 }
 
 #ImportingIrisDataSetImage {
@@ -411,7 +466,7 @@ footer {
 }
 
 #MovieSentiment {
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 3fr 5fr;
 }
 
 #MovieSentimentImage {
@@ -420,7 +475,7 @@ footer {
 }
 
 #MushroomDataset {
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 3fr 7fr;
 }
 
 #MushroomDatasetImage {
@@ -429,7 +484,7 @@ footer {
 }
 
 #MultiInputPolynomialRegression {
-    grid-template-columns: 3fr 5fr;
+    grid-template-columns: 4fr 3fr;
 }
 
 #MultiInputPolynomialRegressionImage {
@@ -438,7 +493,7 @@ footer {
 }
 
 #Bomberman {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 #BombermanImage {
