@@ -33,6 +33,51 @@
     z-index: 9999;
 }
 
+.text-ticker-left {
+    position: fixed;
+    background-color: black;
+    opacity: 100%;
+    top: 0px;
+    line-height: 100%;
+    white-space: nowrap;
+    padding-block: 0.5vh;
+    overflow: hidden;
+    --gap: 3vw;
+    display: flex;
+    gap: var(--gap);
+    mask-image: linear-gradient(90deg, transparent, white 5%, white 25%, transparent 30%);
+    -webkit-mask-image: linear-gradient(90deg, transparent, white 5%, white 95%, transparent 100%);
+}
+
+.text-ticker-left ul {
+  list-style: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll-left 20s linear infinite;
+}
+
+.text-ticker-left ul li {
+  font-family: serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 6rem;
+  color: var(--medium2);
+  text-align: center;
+  line-height: 100%;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
 hr.hero-header {
     width: 15%;
     margin-top: 2rem;
