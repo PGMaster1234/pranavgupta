@@ -35,7 +35,7 @@
 
 .text-ticker-left {
     position: fixed;
-    background-color: rgb(34, 29, 55);
+    background-color: black;
     opacity: 100%;
     bottom: 0px;
     z-index: 9998;
@@ -61,12 +61,12 @@
 }
 
 .text-ticker-left ul li {
-  font-family: sans-serif;
+  font-family: "Chakra Petch", serif;
   font-weight: 900;
   font-style: normal;
   font-size: 4rem;
-  color: rgb(234, 229, 255);
-  background-color: rgb(34, 29, 55);
+  color: white;
+  background-color: black;
   text-align: center;
   line-height: 100%;
   white-space: nowrap;
