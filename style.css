@@ -38,6 +38,7 @@
     background-color: black;
     opacity: 100%;
     bottom: 0px;
+    z-index: 9998;
     line-height: 100%;
     white-space: nowrap;
     padding-block: 0.5vh;
@@ -56,17 +57,20 @@
   align-items: center;
   gap: var(--gap);
   animation: scroll-left 20s linear infinite;
+  z-index: 9998;
 }
 
 .text-ticker-left ul li {
-  font-family: serif;
+  font-family: "Gill Sans";
   font-weight: 900;
   font-style: normal;
   font-size: 6rem;
-  color: var(--medium2);
+  color: white;
+  background-color: black;
   text-align: center;
   line-height: 100%;
   white-space: nowrap;
+  z-index: 9998;
 }
 
 @keyframes scroll-left {
