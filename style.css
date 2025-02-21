@@ -37,7 +37,7 @@
     position: fixed;
     background-color: black;
     opacity: 100%;
-    top: 0px;
+    bottom: 0px;
     line-height: 100%;
     white-space: nowrap;
     padding-block: 0.5vh;
