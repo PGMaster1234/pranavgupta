@@ -36,6 +36,8 @@
 .text-ticker-left {
     position: fixed;
     background-color: black;
+    margin-left: 2%;
+    width: 96%;
     opacity: 100%;
     bottom: 0px;
     z-index: 9998;
@@ -46,7 +48,7 @@
     --gap: 3vw;
     display: flex;
     gap: var(--gap);
-    mask-image: linear-gradient(90deg, transparent, white 5%, white 25%, transparent 30%);
+    mask-image: linear-gradient(90deg, transparent, white 5%, white 95%, transparent 100%);
     -webkit-mask-image: linear-gradient(90deg, transparent, white 5%, white 95%, transparent 100%);
 }
 
