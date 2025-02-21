@@ -35,7 +35,7 @@
 
 .text-ticker-left {
     position: fixed;
-    background-color: black;
+    background-color: rgb(34, 29, 55);
     opacity: 100%;
     bottom: 0px;
     z-index: 9998;
@@ -56,17 +56,17 @@
   display: flex;
   align-items: center;
   gap: var(--gap);
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 15s linear infinite;
   z-index: 9998;
 }
 
 .text-ticker-left ul li {
-  font-family: "Gill Sans";
+  font-family: sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 6rem;
-  color: white;
-  background-color: black;
+  font-size: 4rem;
+  color: rgb(234, 229, 255);
+  background-color: rgb(34, 29, 55);
   text-align: center;
   line-height: 100%;
   white-space: nowrap;
